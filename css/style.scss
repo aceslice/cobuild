@@ -125,57 +125,30 @@ body {
     align-items: center;
     margin-bottom: 2em;
     .input {
-      width: 50px;
       height: 50px;
       border-radius: 8px;
       border: none;
       outline: none;
-      padding: 20px 18px;
-      background-color: transparent;
-      cursor: pointer;
-      transition: all 0.5s ease-in-out;
-      font-size: 16px;
-    }
-    .input::placeholder {
-      color: transparent;
-    }
-
-    .input:focus::placeholder {
-      color: slategray;
-    }
-
-    .input:focus,
-    .input:not(:placeholder-shown) {
       background-color: #fff;
+      cursor: pointer;
+      font-size: 16px;
       border: 1px solid #0061ff;
       width: 500px;
-      cursor: none;
       padding: 18px 16px 18px 50px;
     }
-
     .icon {
       position: absolute;
       left: 0;
       top: 0;
       height: 50px;
       width: 50px;
-      background-color: #fff;
       border-radius: 10px;
-      z-index: -1;
       fill: #0061ff;
-      border: 1px solid #0061ff;
     }
 
     .input:hover + .icon {
       transform: rotate(360deg);
       transition: 0.2s ease-in-out;
-    }
-
-    .input:focus + .icon,
-    .input:not(:placeholder-shown) + .icon {
-      z-index: 0;
-      background-color: transparent;
-      border: none;
     }
   }
   .chips {
@@ -214,6 +187,30 @@ body {
     p {
       margin: 0 auto;
       margin-left: 1.5em;
+    }
+  }
+}
+@media only screen and (min-device-width: 0) and (max-device-width: 767px){
+  body{
+    padding: 0;
+  }
+  .topnav{
+    .logo{
+      h1{
+        display: none;
+      }
+    }
+    .links{
+      display: none;
+    }
+  }
+  .hero{
+    padding: 20px;
+    .input-container{
+      width: 100%;
+      .input{
+        height: 50px;
+      }
     }
   }
 }

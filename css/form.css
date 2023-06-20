@@ -107,4 +107,28 @@ main {
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (min-device-width: 0) and (max-device-width: 767px) {
+  body {
+    padding: 0;
+  }
+  body main {
+    width: 100%;
+    background-color: transparent;
+  }
+  body main .img-container {
+    display: none;
+  }
+  body main .container {
+    width: 100%;
+    padding: 40px 20px;
+  }
+  body main .container form {
+    width: 100%;
+    padding: 0;
+  }
+  body main .container form input {
+    height: 55px;
+  }
 }/*# sourceMappingURL=form.css.map */

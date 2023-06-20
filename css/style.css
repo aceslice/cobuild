@@ -131,42 +131,15 @@ body {
   margin-bottom: 2em;
 }
 .hero .input-container .input {
-  width: 50px;
   height: 50px;
   border-radius: 8px;
   border: none;
   outline: none;
-  padding: 20px 18px;
-  background-color: transparent;
+  background-color: #fff;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
   font-size: 16px;
-}
-.hero .input-container .input::-moz-placeholder {
-  color: transparent;
-}
-.hero .input-container .input::placeholder {
-  color: transparent;
-}
-.hero .input-container .input:focus::-moz-placeholder {
-  color: slategray;
-}
-.hero .input-container .input:focus::placeholder {
-  color: slategray;
-}
-.hero .input-container .input:not(:-moz-placeholder-shown) {
-  background-color: #fff;
   border: 1px solid #0061ff;
   width: 500px;
-  cursor: none;
-  padding: 18px 16px 18px 50px;
-}
-.hero .input-container .input:focus,
-.hero .input-container .input:not(:placeholder-shown) {
-  background-color: #fff;
-  border: 1px solid #0061ff;
-  width: 500px;
-  cursor: none;
   padding: 18px 16px 18px 50px;
 }
 .hero .input-container .icon {
@@ -175,26 +148,12 @@ body {
   top: 0;
   height: 50px;
   width: 50px;
-  background-color: #fff;
   border-radius: 10px;
-  z-index: -1;
   fill: #0061ff;
-  border: 1px solid #0061ff;
 }
 .hero .input-container .input:hover + .icon {
   transform: rotate(360deg);
   transition: 0.2s ease-in-out;
-}
-.hero .input-container .input:not(:-moz-placeholder-shown) + .icon {
-  z-index: 0;
-  background-color: transparent;
-  border: none;
-}
-.hero .input-container .input:focus + .icon,
-.hero .input-container .input:not(:placeholder-shown) + .icon {
-  z-index: 0;
-  background-color: transparent;
-  border: none;
 }
 .hero .chips {
   display: flex;
@@ -233,4 +192,25 @@ body {
 .hero .chips p {
   margin: 0 auto;
   margin-left: 1.5em;
+}
+
+@media only screen and (min-device-width: 0) and (max-device-width: 767px) {
+  body {
+    padding: 0;
+  }
+  .topnav .logo h1 {
+    display: none;
+  }
+  .topnav .links {
+    display: none;
+  }
+  .hero {
+    padding: 20px;
+  }
+  .hero .input-container {
+    width: 100%;
+  }
+  .hero .input-container .input {
+    height: 50px;
+  }
 }/*# sourceMappingURL=style.css.map */
