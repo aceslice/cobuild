@@ -126,7 +126,7 @@ body {
     align-items: center;
     margin-bottom: 2em;
     .input {
-      height: 50px;
+      height: 55px;
       border-radius: 8px;
       border: none;
       outline: none;
@@ -135,14 +135,14 @@ body {
       font-size: 16px;
       border: 1px solid #0061ff;
       width: 500px;
-      padding: 18px 16px 18px 50px;
+      padding: 18px 16px 18px 55px;
     }
     .icon {
       position: absolute;
       left: 0;
       top: 0;
-      height: 50px;
-      width: 50px;
+      height: 55px;
+      width: 55px;
       border-radius: 10px;
       fill: #0061ff;
     }
@@ -210,7 +210,7 @@ body {
     .input-container{
       width: 100%;
       .input{
-        height: 50px;
+        height: 55px;
       }
     }
   }
