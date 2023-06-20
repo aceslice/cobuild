@@ -18,7 +18,7 @@
           <img src="./assets/diversity_96px.png" alt="" />
           <!-- <h1>Cobuild</h1> -->
         </div>
-        <form netlify> 
+        <form netlify id="form"> 
           <label for="name">Your name</label>
         <input
           type="text"
@@ -54,6 +54,10 @@
       if (!task.value) {
         task.value = receivedData;
       }
+      document.getElementById("form").addEventListener("submit", (e)=>{
+        e.preventDefault();
+        alert("Submision sucessful. Someone will reach out to you on the contact details you provided. Stay awesome!!")
+      })
     </script>
   </body>
 </html>
