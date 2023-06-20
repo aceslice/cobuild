@@ -123,6 +123,9 @@ main {
     width: 100%;
     padding: 40px 20px;
   }
+  body main .container img {
+    display: none;
+  }
   body main .container form {
     width: 100%;
     padding: 0;

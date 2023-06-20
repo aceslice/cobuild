@@ -116,9 +116,13 @@ main {
       .container{
         width: 100%;
         padding: 40px 20px;
+        img{
+         display: none; 
+        }
         form{
           width: 100%;
           padding: 0;
+          
           input{
             height: 55px;
           }
