@@ -30,6 +30,7 @@ body {
   backdrop-filter: blur(35px);
   position: sticky;
   top: 0;
+  z-index: 3;
   .logo {
     display: flex;
     align-items: center;
