@@ -54,10 +54,13 @@
       if (!task.value) {
         task.value = receivedData;
       }
-      document.getElementById("form").addEventListener("submit", (e)=>{
+     const form =  document.getElementById("form")
+     form.addEventListener("submit", (e)=>{
         e.preventDefault();
-        alert("Submision sucessful. Someone will reach out to you on the contact details you provided. Stay awesome!!")
+        alert("Submision sucessful. Someone will reach out to you on the contact details you provided. Stay awesome!!");
+        form.reset();
       })
+     
     </script>
   </body>
 </html>
