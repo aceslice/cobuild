@@ -1,5 +1,10 @@
 let input = document.querySelector("input");
 const inputContainer = document.querySelector(".input-container");
+let icon = document.querySelector(".icon");
+icon.addEventListener("click", (e)=>{
+    e.preventDefault()
+    transferData();
+})
 
 inputContainer.addEventListener("submit", (e)=>{
     e.preventDefault();
