@@ -5,9 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reach out to cobuilders to help you with you tasks</title>
     <link rel="stylesheet" href="css/form.css" />
-    <link rel="icon" type="image/x-icon" href="/assets/diversity_96px.png">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/diversity_96px.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-JEQL44CL2B"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
+      gtag("config", "G-JEQL44CL2B");
+    </script>
   </head>
   <body>
     <nav class="topnav">
@@ -33,32 +46,37 @@
           <img src="./assets/diversity_96px.png" alt="" />
           <!-- <h1>Cobuild</h1> -->
         </div>
-        <form netlify id="form"> 
+        <form netlify id="form">
           <label for="name">Your name</label>
-        <input
-          type="text"
-          placeholder="eg. John Doe"
-          name="name"
-          id="name"
-          required
-        />
+          <input
+            type="text"
+            placeholder="eg. John Doe"
+            name="name"
+            id="name"
+            required
+          />
 
-        <label for="numail">Phone or email</label>
-        <input
-          type="text"
-          name="numail"
-          placeholder="eg. johndoe@numail.xyz"
-          id="numail"
-          required
-        />
+          <label for="numail">Phone or email</label>
+          <input
+            type="text"
+            name="numail"
+            placeholder="eg. johndoe@numail.xyz"
+            id="numail"
+            required
+          />
 
-        <label for="task">Tell us more</label>
-        <textarea name="task" id="task" cols="30" rows="10"></textarea>
-        <label for="time">When do you need it?</label>
-        <input type="text" placeholder="eg. In a week" id="time" name="time" required/>
-        <button>Send my request</button>
+          <label for="task">Tell us more</label>
+          <textarea name="task" id="task" cols="30" rows="10"></textarea>
+          <label for="time">When do you need it?</label>
+          <input
+            type="text"
+            placeholder="eg. In a week"
+            id="time"
+            name="time"
+            required
+          />
+          <button>Send my request</button>
         </form>
-        
       </div>
     </main>
     <script>
@@ -69,11 +87,12 @@
       if (!task.value) {
         task.value = receivedData;
       }
-     const form =  document.getElementById("form")
-     form.addEventListener("submit", ()=>{
-        alert("Submision sucessful. Someone will reach out to you on the contact details you provided. Stay awesome!!");
-      })
-     
+      const form = document.getElementById("form");
+      form.addEventListener("submit", () => {
+        alert(
+          "Submision sucessful. Someone will reach out to you on the contact details you provided. Stay awesome!!"
+        );
+      });
     </script>
   </body>
 </html>
