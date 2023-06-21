@@ -26,7 +26,6 @@ main {
   margin: 0 auto;
   background-color: #fff;
   backdrop-filter: blur(35px);
-
 }
 .container {
   flex: 1;
@@ -35,8 +34,8 @@ main {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-bottom: .5em;
-    gap: .5em;
+    margin-bottom: 0.5em;
+    gap: 0.5em;
     text-align: center;
     img {
       height: 40px;
@@ -57,7 +56,7 @@ main {
       font-size: 13px;
       color: slategray;
     }
-    
+
     input {
       padding: 15px;
       width: 100%;
@@ -66,7 +65,7 @@ main {
       border-radius: 8px;
       font-size: 16px;
     }
-    textarea{
+    textarea {
       padding: 15px;
       width: 100%;
       height: 100px;
@@ -74,7 +73,7 @@ main {
       border-radius: 8px;
       font-size: 16px;
     }
-    button{
+    button {
       width: 100%;
       height: 50px;
       margin-top: 1em;
@@ -83,6 +82,15 @@ main {
       color: #fff;
       font-size: 16px;
       border-radius: 10px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        position: absolute;
+        right: 32px;
+        transform: rotate(45deg);
+      }
     }
   }
 }
@@ -104,27 +112,32 @@ main {
     background-color: rgba($color: #000000, $alpha: 0.3);
   }
 }
-@media only screen and (min-device-width: 0) and (max-device-width: 767px){
-  body{
+@media only screen and (min-device-width: 0) and (max-device-width: 767px) {
+  body {
     padding: 0;
-    main{
+    main {
       width: 100%;
       background-color: transparent;
-      .img-container{
+      .img-container {
         display: none;
       }
-      .container{
+      .container {
         width: 100%;
         padding: 40px 20px;
-        img{
-         display: none; 
+        img {
+          display: none;
         }
-        form{
+        form {
           width: 100%;
           padding: 0;
-          
-          input{
+          input {
             height: 55px;
+          }
+          button{
+            img{
+              display: block;
+            }
+            
           }
         }
       }
