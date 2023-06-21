@@ -42,7 +42,7 @@ body {
   gap: 1em;
 }
 .topnav .logo img {
-  height: 45px;
+  height: 25px;
 }
 .topnav .logo h1 {
   color: #fff;
@@ -87,6 +87,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background: url(https://uploads-ssl.webflow.com/5f80f79786c4517b5951a7a3/62fcea2679e0c60a433a9446_bg-blur-hero.svg);
 }
 .hero .info {
   display: flex;
@@ -99,7 +100,7 @@ body {
   gap: 1em;
 }
 .hero .info img {
-  height: 30px;
+  height: 25px;
 }
 .hero h1 {
   margin-top: 24px;

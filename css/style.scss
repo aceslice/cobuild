@@ -37,7 +37,7 @@ body {
     justify-content: center;
     gap: 1em;
     img {
-      height: 45px;
+      height: 25px;
     }
     h1 {
       color: #fff;
@@ -83,6 +83,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background: url(https://uploads-ssl.webflow.com/5f80f79786c4517b5951a7a3/62fcea2679e0c60a433a9446_bg-blur-hero.svg);
   .info {
     display: flex;
     align-items: center;
@@ -93,7 +94,7 @@ body {
     color: #fff;
     gap: 1em;
     img {
-      height: 30px;
+      height: 25px;
     }
   }
   h1 {
@@ -107,6 +108,7 @@ body {
     text-align: center;
     span {
       background: linear-gradient(256deg, #ff1b6b, #ff930f, #bf0fff, #0061ff);
+      // background: linear-gradient(90deg, #FF6464 0%, #FFBF59 50%, #47C9FF 100%);
       background-clip: text;
       -webkit-text-fill-color: transparent;
     }
