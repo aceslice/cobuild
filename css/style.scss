@@ -1,11 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
 @font-face {
   font-family: Degular Display;
   src: url(/fonts/Degular-Medium.1d52003d.woff2);
-}
-@font-face {
-  font-family: Recoleta;
-  src: url(/fonts/RecoletaSemiBold.woff2);
 }
 * {
   margin: 0;
@@ -209,6 +204,7 @@ body {
   }
   .hero{
     padding: 20px;
+    background: none;
     .input-container{
       width: 100%;
       .input{
