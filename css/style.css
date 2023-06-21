@@ -1,6 +1,7 @@
 @font-face {
   font-family: Degular Display;
   src: url(/fonts/Degular-Medium.1d52003d.woff2);
+  font-display: swap;
 }
 * {
   margin: 0;
