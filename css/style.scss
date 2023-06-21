@@ -192,6 +192,9 @@ body {
 @media only screen and (min-device-width: 0) and (max-device-width: 767px){
   body{
     padding: 0;
+    background: url(/assets/tt_bg.png);
+    background-position: center;
+    background-size: cover;
   }
   .topnav{
     .logo{
@@ -205,7 +208,8 @@ body {
   }
   .hero{
     padding: 20px;
-    background: none;
+background: #ffffff10;
+backdrop-filter: blur(3px);
     .input-container{
       width: 100%;
       .input{

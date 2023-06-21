@@ -197,6 +197,9 @@ body {
 @media only screen and (min-device-width: 0) and (max-device-width: 767px) {
   body {
     padding: 0;
+    background: url(/assets/tt_bg.png);
+    background-position: center;
+    background-size: cover;
   }
   .topnav .logo h1 {
     display: none;
@@ -206,7 +209,9 @@ body {
   }
   .hero {
     padding: 20px;
-    background: none;
+    background: rgba(255, 255, 255, 0.062745098);
+    -webkit-backdrop-filter: blur(3px);
+            backdrop-filter: blur(3px);
   }
   .hero .input-container {
     width: 100%;
