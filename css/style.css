@@ -9,10 +9,10 @@
   box-sizing: border-box;
   font-family: "Degular Display", sans-serif;
   transition: 200ms ease;
+  color: #3f4550;
 }
 
 body {
-  background: linear-gradient(256deg, #081f3d, #000d1a);
   color: #3f4550;
   font-size: 18px;
   line-height: 1.6em;
@@ -24,7 +24,7 @@ body {
   justify-content: space-between;
   padding: 20px;
   margin-bottom: 1em;
-  background-color: rgba(33, 33, 33, 0.062745098);
+  background-color: rgba(250, 250, 250, 0.1882352941);
   -webkit-backdrop-filter: blur(35px);
           backdrop-filter: blur(35px);
   position: sticky;
@@ -41,8 +41,6 @@ body {
   height: 40px;
 }
 .topnav .logo h1 {
-  color: #fff;
-  font-family: "Recoleta", sans-serif;
   font-size: 24px;
 }
 .topnav .links {
@@ -57,7 +55,7 @@ body {
   color: #0061ff;
 }
 .topnav .links .active {
-  color: #fff;
+  color: #0061ff;
 }
 .topnav button {
   padding: 10px 20px;
@@ -75,6 +73,7 @@ body {
 .topnav button:hover {
   border: 2px solid #0061ff;
   background: transparent;
+  color: #0061ff;
 }
 
 .hero {
@@ -91,8 +90,11 @@ body {
   justify-content: center;
   padding: 8px 12px 8px 8px;
   border-radius: 8px;
-  box-shadow: 0 0 0 1px hsla(0, 0%, 100%, 0.12);
-  color: #fff;
+  box-shadow: 0 0 0 1.5px #fafafa;
+  color: slategray;
+  background-color: rgba(250, 250, 250, 0.062745098);
+  -webkit-backdrop-filter: blur(35px);
+          backdrop-filter: blur(35px);
   gap: 1em;
 }
 .hero .info img {
@@ -101,7 +103,6 @@ body {
 .hero h1 {
   margin-top: 24px;
   margin-bottom: 24px;
-  color: #fff;
   font-size: 48px;
   line-height: 1.2em;
   font-weight: 700;
@@ -116,7 +117,7 @@ body {
 .hero p {
   max-width: 680px;
   margin-bottom: 36px;
-  color: rgba(230, 237, 250, 0.6);
+  color: gray;
   font-size: 20px;
   line-height: 1.6em;
   font-weight: 400;
@@ -134,7 +135,6 @@ body {
   border: none;
   outline: none;
   background-color: #fff;
-  cursor: pointer;
   font-size: 16px;
   border: 1px solid #0061ff;
   width: 500px;
@@ -190,6 +190,7 @@ body {
 .hero .chips p {
   margin: 0 auto;
   margin-left: 1.5em;
+  color: #3f4550;
 }
 
 @media only screen and (min-device-width: 0) and (max-device-width: 767px) {

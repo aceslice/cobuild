@@ -17,7 +17,7 @@
 body {
   font-size: 18px;
   line-height: 1.6em;
-  background: #fafafa !important;
+  background: url(https://uploads-ssl.webflow.com/5f80f79786c4517b5951a7a3/62fcea2679e0c60a433a9446_bg-blur-hero.svg);
 }
 
 main {
@@ -26,9 +26,7 @@ main {
   border-radius: 2px;
   overflow: hidden;
   margin: 0 auto;
-  background-color: #fff;
-  -webkit-backdrop-filter: blur(35px);
-          backdrop-filter: blur(35px);
+  background-color: #ffffff;
 }
 
 .container {
@@ -123,7 +121,6 @@ main {
   }
   body main {
     width: 100%;
-    background-color: transparent;
   }
   body main .img-container {
     display: none;
