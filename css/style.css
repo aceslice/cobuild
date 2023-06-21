@@ -82,6 +82,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  height: 100%;
   background: url(https://uploads-ssl.webflow.com/5f80f79786c4517b5951a7a3/62fcea2679e0c60a433a9446_bg-blur-hero.svg);
 }
 .hero .info {
