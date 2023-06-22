@@ -127,7 +127,7 @@ main {
   }
   body main .container {
     width: 100%;
-    padding: 40px 20px;
+    padding: 30px 20px;
   }
   body main .container img {
     display: none;
@@ -136,8 +136,8 @@ main {
     width: 100%;
     padding: 0;
   }
-  body main .container form input {
-    height: 55px;
+  body main .container form button {
+    height: 60px;
   }
   body main .container form button img {
     display: block;
