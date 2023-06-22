@@ -197,6 +197,9 @@ body {
   body {
     padding: 0;
   }
+  .topnav {
+    padding: 10px;
+  }
   .topnav .logo h1 {
     display: none;
   }
