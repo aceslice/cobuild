@@ -54,40 +54,22 @@ body {
       color: #0061ff;
     }
   }
-  .actions {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5em;
-    button {
-      padding: 13px 23px 13px 19px;
-      background: #0061ff;
-      color: #fff;
-      border: 2px solid transparent;
-      border-radius: 5px;
-      font-size: 15px;
-      text-align: center;
-      cursor: pointer;
-      span {
-        color: lightgray;
-      }
-      &:hover {
-        border: 2px solid #0061ff;
-        background: transparent;
-        color: #0061ff;
-      }
+  button {
+    padding: 14px 24px 14px 20px;
+    background: #0061ff;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    span {
+      color: lightgray;
     }
-    .mail {
-      display: flex;
-      width: 40px;
-      height: 40px;
-      justify-content: center;
-      align-items: center;
-      border-radius: 100px;
-      background-color: #0061ff;
-      img{
-        height: 20px;
-      }
+    &:hover {
+      border: 2px solid #0061ff;
+      background: transparent;
+      color: #0061ff;
     }
   }
 }
@@ -207,26 +189,26 @@ body {
     }
   }
 }
-@media only screen and (min-device-width: 0) and (max-device-width: 767px) {
-  body {
+@media only screen and (min-device-width: 0) and (max-device-width: 767px){
+  body{
     padding: 0;
   }
-  .topnav {
-    .logo {
-      h1 {
+  .topnav{
+    .logo{
+      h1{
         display: none;
       }
     }
-    .links {
+    .links{
       display: none;
     }
   }
-  .hero {
+  .hero{
     padding: 20px;
     background: none;
-    .input-container {
+    .input-container{
       width: 100%;
-      .input {
+      .input{
         height: 55px;
       }
     }
