@@ -2,10 +2,6 @@
   font-family: Degular Display;
   src: url(/fonts/Degular-Medium.1d52003d.woff2);
 }
-@font-face {
-  font-family: Recoleta;
-  src: url(/fonts/RecoletaSemiBold.woff2);
-}
 * {
   margin: 0;
   padding: 0;
@@ -36,7 +32,7 @@ main {
 .container .logo {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   margin-bottom: 0.5em;
   gap: 0.5em;
   text-align: center;
