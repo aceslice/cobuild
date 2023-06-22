@@ -95,6 +95,10 @@ main {
   right: 32px;
   transform: rotate(45deg);
 }
+.container form input:focus, .container form textarea:focus {
+  border-color: #0061ff;
+  outline: none;
+}
 
 .img-container {
   position: relative;

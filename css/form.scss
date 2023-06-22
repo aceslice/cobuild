@@ -91,6 +91,10 @@ main {
         transform: rotate(45deg);
       }
     }
+    input:focus, textarea:focus{
+      border-color: #0061ff;
+      outline: none;
+    }
   }
 }
 .img-container {
