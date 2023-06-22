@@ -57,8 +57,14 @@ body {
 .topnav .links .active {
   color: #0061ff;
 }
-.topnav button {
-  padding: 10px 20px;
+.topnav .actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5em;
+}
+.topnav .actions button {
+  padding: 13px 23px 13px 19px;
   background: #0061ff;
   color: #fff;
   border: 2px solid transparent;
@@ -67,13 +73,25 @@ body {
   text-align: center;
   cursor: pointer;
 }
-.topnav button span {
+.topnav .actions button span {
   color: lightgray;
 }
-.topnav button:hover {
+.topnav .actions button:hover {
   border: 2px solid #0061ff;
   background: transparent;
   color: #0061ff;
+}
+.topnav .actions .mail {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background-color: #0061ff;
+}
+.topnav .actions .mail img {
+  height: 20px;
 }
 
 .hero {
