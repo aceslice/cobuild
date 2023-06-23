@@ -365,13 +365,16 @@ body {
   body {
     padding: 0;
   }
-  .topnav, .testimonials {
+  .topnav,
+  .testimonials {
     padding: 10px;
   }
-  .topnav .logo h1, .testimonials .logo h1 {
+  .topnav .logo h1,
+  .testimonials .logo h1 {
     display: none;
   }
-  .topnav .links, .testimonials .links {
+  .topnav .links,
+  .testimonials .links {
     display: none;
   }
   .hero {

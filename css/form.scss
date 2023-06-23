@@ -87,7 +87,8 @@ main {
         transform: rotate(45deg);
       }
     }
-    input:focus, textarea:focus{
+    input:focus,
+    textarea:focus {
       border-color: #0061ff;
       outline: none;
     }
@@ -131,11 +132,10 @@ main {
           button {
             height: 60px;
           }
-          button{
-            img{
+          button {
+            img {
               display: block;
             }
-            
           }
         }
       }
