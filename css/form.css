@@ -13,7 +13,7 @@
 body {
   font-size: 18px;
   line-height: 1.6em;
-  background: url(https://uploads-ssl.webflow.com/5f80f79786c4517b5951a7a3/62fcea2679e0c60a433a9446_bg-blur-hero.svg);
+  background-color: aliceblue !important;
 }
 
 main {
