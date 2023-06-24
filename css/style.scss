@@ -11,11 +11,30 @@
   transition: 200ms ease;
   color: #3f4550;
 }
+$primary-color: #0061ff;
 body {
   // background: linear-gradient(256deg, #081f3d, #000d1a);
   color: #3f4550;
   font-size: 18px;
   line-height: 1.6em;
+}
+.primary-btn {
+  padding: 14px 24px 14px 20px;
+  background: $primary-color;
+  color: #fff;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  span {
+    color: lightgray;
+  }
+  &:hover {
+    border: 2px solid $primary-color;
+    background: transparent;
+    color: $primary-color;
+  }
 }
 .topnav {
   display: flex;
@@ -47,29 +66,11 @@ body {
       text-decoration: none;
       color: slategray;
       &:hover {
-        color: #0061ff;
+        color: $primary-color;
       }
     }
     .active {
-      color: #0061ff;
-    }
-  }
-  button {
-    padding: 14px 24px 14px 20px;
-    background: #0061ff;
-    color: #fff;
-    border: 2px solid transparent;
-    border-radius: 5px;
-    font-size: 15px;
-    text-align: center;
-    cursor: pointer;
-    span {
-      color: lightgray;
-    }
-    &:hover {
-      border: 2px solid #0061ff;
-      background: transparent;
-      color: #0061ff;
+      color: $primary-color;
     }
   }
 }
@@ -104,7 +105,13 @@ body {
     font-weight: 700;
     text-align: center;
     span {
-      background: linear-gradient(256deg, #ff1b6b, #ff930f, #bf0fff, #0061ff);
+      background: linear-gradient(
+        256deg,
+        #ff1b6b,
+        #ff930f,
+        #bf0fff,
+        $primary-color
+      );
       background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -130,7 +137,7 @@ body {
       outline: none;
       background-color: #fff;
       font-size: 16px;
-      border: 1.5px solid #0061ff;
+      border: 1.5px solid $primary-color;
       width: 500px;
       padding: 18px 16px 18px 55px;
     }
@@ -141,7 +148,7 @@ body {
       height: 24px;
       width: 24px;
       border-radius: 10px;
-      fill: #0061ff;
+      fill: $primary-color;
     }
 
     .input:hover + .icon {
@@ -189,13 +196,98 @@ body {
     color: #3f4550;
   }
 }
+// Features
+.features {
+  padding: 80px;
+  width: 100%;
+  .title {
+    text-align: center;
+    margin-bottom: 0.5em;
+    font-size: 40px;
+  }
+  .subtitle {
+    text-align: center;
+    margin-bottom: 3em;
+    color: slategray;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 1.6em;
+    font-weight: 400;
+    color: #676d79;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 5em;
+    .left {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: column;
+      flex: 1;
+      .tagline {
+        display: inline-block;
+        padding: 6px 12px;
+        border-radius: 6px;
+        background-color: rgba(41, 141, 255, 0.12);
+        color: $primary-color;
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 500;
+      }
+      h1 {
+        color: #2d3139;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        font-size: 40px;
+        line-height: 1.2em;
+      }
+    }
+    .img-container {
+      flex: 1.5;
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 376px;
+      border-radius: 12px;
+      background-color: #fff;
+      background-image: linear-gradient(135deg, #fcfbf7, #fffafc 49%, #f0f7ff);
+      box-shadow: 0 0 0 1px #ebeef5;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &:nth-child(even) {
+      .left {
+        order: 2;
+      }
+    }
+  }
+  .caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    p {
+      margin-bottom: 16px;
+    }
+  }
+}
+// Testimonials
 .testimonials {
   background: #edf2f8;
-  padding-top: 2em;
+  padding: 80px;
   overflow: hidden;
   h1 {
     text-align: center;
-    font-size: 24px;
+    font-size: 40px;
   }
 }
 .outerdiv {
@@ -339,8 +431,7 @@ body {
   body {
     padding: 0;
   }
-  .topnav,
-  .testimonials {
+  .topnav {
     padding: 10px;
     .logo {
       h1 {
@@ -360,5 +451,17 @@ body {
         height: 55px;
       }
     }
+  }
+  .features {
+    padding: 40px 20px;
+    .container {
+      flex-direction: column;
+      .left{
+        order: 2;
+      }
+    }
+  }
+  .testimonials {
+    padding: 40px 20px;
   }
 }
