@@ -457,8 +457,12 @@ body {
     padding: 40px 20px;
     .container {
       flex-direction: column;
+      gap: 20px;
       .left{
         order: 1;
+      }
+      .img-container{
+        order: 2;
       }
     }
   }

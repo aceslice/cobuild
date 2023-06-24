@@ -473,9 +473,13 @@ body {
   }
   .features .container {
     flex-direction: column;
+    gap: 20px;
   }
   .features .container .left {
     order: 1;
+  }
+  .features .container .img-container {
+    order: 2;
   }
   .testimonials {
     padding: 40px 20px;
