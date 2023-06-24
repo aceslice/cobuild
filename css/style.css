@@ -475,7 +475,7 @@ body {
     flex-direction: column;
   }
   .features .container .left {
-    order: 2;
+    order: 1;
   }
   .testimonials {
     padding: 40px 20px;
