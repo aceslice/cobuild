@@ -18,6 +18,7 @@ body {
   font-size: 18px;
   line-height: 1.6em;
 }
+// Primary buttons
 .primary-btn {
   padding: 14px 24px 14px 20px;
   background: $primary-color;
@@ -35,6 +36,17 @@ body {
     background: transparent;
     color: $primary-color;
   }
+}
+// Titles and subtitles
+.title {
+  text-align: center;
+  margin-bottom: 0.5em;
+  font-size: 40px;
+}
+.subtitle {
+  text-align: center;
+  margin-bottom: 3em;
+  color: slategray;
 }
 .topnav {
   display: flex;
@@ -200,16 +212,6 @@ body {
 .features {
   padding: 80px;
   width: 100%;
-  .title {
-    text-align: center;
-    margin-bottom: 0.5em;
-    font-size: 40px;
-  }
-  .subtitle {
-    text-align: center;
-    margin-bottom: 3em;
-    color: slategray;
-  }
   p {
     margin-top: 0;
     margin-bottom: 40px;
@@ -285,10 +287,6 @@ body {
   background: #edf2f8;
   padding: 80px;
   overflow: hidden;
-  h1 {
-    text-align: center;
-    font-size: 40px;
-  }
 }
 .outerdiv {
   width: 100%;

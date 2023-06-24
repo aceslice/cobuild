@@ -37,6 +37,18 @@ body {
   color: #0061ff;
 }
 
+.title {
+  text-align: center;
+  margin-bottom: 0.5em;
+  font-size: 40px;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 3em;
+  color: slategray;
+}
+
 .topnav {
   display: flex;
   align-items: center;
@@ -199,16 +211,6 @@ body {
   padding: 80px;
   width: 100%;
 }
-.features .title {
-  text-align: center;
-  margin-bottom: 0.5em;
-  font-size: 40px;
-}
-.features .subtitle {
-  text-align: center;
-  margin-bottom: 3em;
-  color: slategray;
-}
 .features p {
   margin-top: 0;
   margin-bottom: 40px;
@@ -281,10 +283,6 @@ body {
   background: #edf2f8;
   padding: 80px;
   overflow: hidden;
-}
-.testimonials h1 {
-  text-align: center;
-  font-size: 40px;
 }
 
 .outerdiv {
