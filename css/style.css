@@ -77,7 +77,6 @@ body {
 .topnav .links {
   display: flex;
   gap: 1.5em;
-  margin-right: auto;
 }
 .topnav .links a {
   text-decoration: none;

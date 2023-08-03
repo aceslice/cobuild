@@ -74,7 +74,6 @@ body {
   .links {
     display: flex;
     gap: 1.5em;
-    margin-right: auto;
     a {
       text-decoration: none;
       color: slategray;
@@ -457,10 +456,10 @@ body {
     .container {
       flex-direction: column;
       gap: 20px;
-      .left{
+      .left {
         order: 1;
       }
-      .img-container{
+      .img-container {
         order: 2;
       }
     }
